@@ -1,0 +1,187 @@
+#workexp {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: white;
+}
+
+.linksBar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    max-width: 900px;
+    margin: 0 auto 1rem;
+}
+
+.linkItem {
+    display: inline-block;
+    background: #1a1a1a;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 0.9rem 1rem;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    white-space: nowrap;
+}
+
+.linkItem:hover { 
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
+    border-color: rgb(73, 191, 193);
+    color: rgb(73, 191, 193);
+}
+
+.resumeRow {
+    max-width: 900px;
+    margin: 0 auto 2rem;
+}
+
+.resumeLink {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.1);
+    background: #111;
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .linksBar { grid-template-columns: 1fr; }
+}
+
+/* Flash highlight animation */
+.flash {
+    animation: flash-green 1s ease-in-out 1;
+}
+
+@keyframes flash-green {
+    0% { background: #111; border-color: rgba(255,255,255,0.1); }
+    25% { background: rgba(73, 191, 193, 0.15); border-color: rgb(73, 191, 193); }
+    50% { background: rgba(73, 191, 193, 0.25); }
+    75% { background: rgba(73, 191, 193, 0.15); }
+    100% { background: #111; border-color: rgba(255,255,255,0.1); }
+}
+
+.workexpTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.workexpDesc {
+    max-width: 800px;
+    margin: 0 auto 1rem; 
+    font-size: 1.1rem;
+    font-weight: 400; 
+    color: white;
+    line-height: 1.4; 
+}
+
+.workexpContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Experience Box */
+.workexpItem {
+    display: flex;
+    align-items: flex-start;
+    background: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 1rem;
+}
+
+.workexpItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Icons */
+.workexpImg {
+    width: 80px;
+    height: 80px;
+    margin-right: 1.5rem;
+    border-radius: 10px;
+    object-fit: contain;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+}
+
+/* Text Content */
+.workexpText {
+    text-align: left;
+    flex: 1;
+}
+
+/* Job Title */
+.jobTitle {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.2rem;
+}
+
+/* Company & Date */
+.company {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #bbbbbb;
+    margin-bottom: 0.5rem;
+}
+
+/* Company Description */
+.workexpCompanyDesc {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #ddd;
+    margin-bottom: 0.5rem;
+}
+
+/* Bullet Points */
+.workexpText ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0.5rem;
+}
+
+.workexpText li {
+    font-size: 0.95rem;
+    font-weight: 300;
+    color: #ddd;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.6;
+}
+
+.workexpText li::before {
+    content: "•";
+    color: rgb(73, 191, 193);
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+    .workexpItem {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .workexpImg {
+        margin-bottom: 1rem;
+        width: 55px;
+        height: 55px;
+    }
+}
