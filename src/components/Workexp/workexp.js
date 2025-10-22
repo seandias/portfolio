@@ -2,6 +2,8 @@ import React from 'react'
 import './workexp.css'
 import Gotrade from '../../assets/gotrade.png'
 import Jago from '../../assets/Jago.png'
+import OCBC from '../../assets/ocbc.png'
+import resumePDF from '../../assets/resume.pdf';
 
 const workexp = () => {
   return (
@@ -13,7 +15,7 @@ const workexp = () => {
             <a href='https://github.com/seandias' target='_blank' rel='noreferrer' className='linkItem'>GitHub</a>
         </div>
         <div className='resumeRow'>
-            <a href='/resume.pdf' target='_blank' rel='noreferrer' className='resumeLink'>View Resume (PDF)</a>
+            <a href={resumePDF} target='_blank' rel='noreferrer' className='resumeLink'>View Resume (PDF)</a>
         </div>
         <span className='workexpTitle'>Internships</span>
 
@@ -21,7 +23,7 @@ const workexp = () => {
 
             {/* OCBC Experience */}
             <div className='workexpItem'>
-                <img src={require('../../assets/ocbc.png')} alt='OCBC' className='workexpImg'/>
+                <img src={OCBC} alt='OCBC' className='workexpImg'/>
                 <div className='workexpText'>
                     <h2>Digital Solutions Intern</h2>
                     <h3>OCBC Bank — Global Transaction Banking | May 2025 – Aug 2025</h3>
