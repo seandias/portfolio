@@ -1,5 +1,7 @@
 import React from 'react'
 import './projects.css'
+import EZStateImg from '../../assets/ezstates.png'
+import GrabRescueImg from '../../assets/grabrescue.png'
 
 const Projects = () => {
   return (
@@ -8,7 +10,7 @@ const Projects = () => {
       <div className='projectsContainer'>
         <div className='projectCard'>
           <div className='projectImagePlaceholder'>
-            <img src={require('../../assets/ezstates.png')} alt='EZSTATE' className='projectImg' />
+            <img src={EZStateImg} alt='EZSTATE' className='projectImg' />
           </div>
           <div className='projectText'>
             <h2>EZSTATE (NUS CS2103T) — Full-Stack Developer</h2>
@@ -23,7 +25,7 @@ const Projects = () => {
 
         <div className='projectCard'>
           <div className='projectImagePlaceholder'>
-            <img src={require('../../assets/grabrescue.png')} alt='GrabRescue' className='projectImg' />
+            <img src={GrabRescueImg} alt='GrabRescue' className='projectImg' />
           </div>
           <div className='projectText'>
             <h2>hackjakarta (Grab x AngelHack) — 2nd Place, Social Responsibility</h2>
